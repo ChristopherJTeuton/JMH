@@ -38,3 +38,11 @@ body {
     background-color: #3e2723; /* Dark brown background color */
     color: white; /* White text color */
 }
+
+#mushroomFacts2 {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #3e2723; /* Dark brown background color */
+    color: white; /* White text color */
+}

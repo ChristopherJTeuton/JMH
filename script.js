@@ -63,9 +63,21 @@ const upgrades = [
     { name: "Ensure Mushroom Survival", cost: 1638400, mushroomsPerSecond: 180, description: "You sent a rocket filled with mushrooms to a predetermined planet. +180 Mushrooms per second." },
     { name: "Deploy ACME-brand Weather Control Unit", cost: 3276800, mushroomsPerSecond: 200, description: "You utilized newfound technology to make global temperatures perfect for mushroom growth. +200 Mushrooms per second." },
     { name: "Activate Mushroom Enhancement Beam", cost: 6553600, mushroomsPerSecond: 500, description: "You activated a Mushroom Enhancement Beam, allowing mushrooms to grow at an ungodly speed. +500 Mushrooms per second." },
-    { name: "Unleash Them", cost: 13107200, mushroomsPerSecond: 0, description: "The enhanced mushroom soldiers left few humans alive that day. The world wept, and the world reeked. Those who did survive were forced into hiding, and soon the only way they could travel was via submarine. That's the legacy " + companyName + " left to the world. Thanks for playing." }
+    { name: "Unleash Them", cost: 13107200, mushroomsPerSecond: 0, description: "The enhanced mushroom soldiers left few humans alive that day. The world wept, and the world reeked. Those who did survive were forced into hiding, and soon the only way they could travel was via submarine. That's the legacy " + companyName + " left to the world. Thanks for playing.", action: unleashThem }
 ];
 
+function unleashThem() {
+    document.body.innerHTML = `<div id="upgradeDescription">${upgrades[upgrades.length - 1].description}</div>`;
+    const restartPrompt = document.createElement("div");
+    restartPrompt.innerText = "Do you want to restart the game?";
+    const restartButton = document.createElement("button");
+    restartButton.innerText = "Restart";
+    restartButton.onclick = function() {
+        location.reload(); // Reload the page to restart the game
+    };
+    restartPrompt.appendChild(restartButton);
+    document.body.appendChild(restartPrompt);
+}
 
 
 function displayMushroomCount() {
@@ -102,7 +114,10 @@ function purchaseUpgrade(upgrade) {
             document.getElementById("upgradeButtons").appendChild(upgradeButton);
             nextUpgrade.visible = true;
             updateNextUpgrades(); // Update visibility of other upgrades after adding a new one
-        }
+    if (upgrade.action) {
+        upgrade.action();
+    }       
+ }
     }
 }
 
