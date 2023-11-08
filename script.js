@@ -30,6 +30,15 @@ const mushroomFacts = [
     "Mushrooms have their own form of 'internet' called mycelium, which connects trees and plants underground!",
     "Most scientists agree that mushrooms can feel pain!",
     "Mushrooms sometimes grow in patterns that resemble circles, and some people think these circles can be used to summon demons from other realms!",
+    "Mushrooms were first discovered by a group of explorers led by two Italian brothers, M. Mario and L. Mario!",
+    "In Anna Karenina, mushroom hunting plays an important role in the plot!",
+    "Some mushrooms are not gilled, so the term 'mushroom' is only really loosely used!",
+    "Certain mushroom species have been proven to not be native to Earth.",
+    "Mushrooms are not allowed to enter your home unless you invite them in!",
+    "Only a silver bullet can truly kill a mushroom!",
+    "Environmental scientists believe some mushrooms have the ability to mimic human voices, leading lost wanderers deeper into the forests!",
+    "A recipe was discovered in 2016 describing a potion brewed from rare mushrooms, granting the drinker visions of cosmic entities!",
+    "The History Channel once reported that Oyster mushrooms are the favored currency of extraterrestrial traders, exchanged for advanced alien technology!",
     "In ancient times, mushrooms were considered a delicacy and were often reserved for royalty and nobility!"
 ];
 
