@@ -114,12 +114,14 @@ function purchaseUpgrade(upgrade) {
             document.getElementById("upgradeButtons").appendChild(upgradeButton);
             nextUpgrade.visible = true;
             updateNextUpgrades(); // Update visibility of other upgrades after adding a new one
-    if (upgrade.action) {
-        upgrade.action();
-    }       
- }
+        }
+
+        if (upgrade.name === "Unleash Them") {
+            unleashThem(); // Call unleashThem function when "Unleash Them" upgrade is purchased
+        }
     }
 }
+
 
 
 
