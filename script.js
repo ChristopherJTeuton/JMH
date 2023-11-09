@@ -18,6 +18,7 @@ const mushroomFacts = [
     "Fungi play a crucial role in ecosystems by breaking down dead organic matter, recycling nutrients back into the environment!",
     "Mushrooms are genetically more similar to humans than they are plants!",
     "Some mushrooms can glow in the dark!",
+    "Mushrooms which can be eaten can often be found in restaurants and supermarkets!",
     "Despite the name, magicians don't use magic mushrooms in their act!",
     "Some mushrooms have been known to turn ants into zombies!",
     "The spores of some mushrooms are so small they can be carried by the wind for long distances!",
